@@ -24,4 +24,6 @@ if [ -z "$DEPLOY_TASKS" ]; then
   exit 0
 fi
 echo $PATH
+ls
+cat Gemfile
 cd $build_dir && /app/vendor/bundle/bin/bundler exec rake $DEPLOY_TASKS
