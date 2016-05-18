@@ -23,5 +23,5 @@ if [ -z "$DEPLOY_TASKS" ]; then
   echo 'heroku config:set DEPLOY_TASKS="tasks to run"'
   exit 0
 fi
-
+echo $PATH
 cd $build_dir && /app/vendor/bundle/bin/bundler exec rake $DEPLOY_TASKS
