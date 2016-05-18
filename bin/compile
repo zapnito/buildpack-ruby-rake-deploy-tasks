@@ -26,4 +26,5 @@ fi
 echo $PATH
 ls
 cat Gemfile
+bash
 cd $build_dir && /app/vendor/bundle/bin/bundler exec rake $DEPLOY_TASKS
