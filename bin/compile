@@ -27,5 +27,9 @@ echo $PATH
 ls
 env
 bash
+echo "** build dir **"
+echo $build_dir
+echo "** env dir **"
+echo $env_dir
 cat Gemfile
 cd $build_dir && /app/vendor/bundle/bin/bundler exec rake $DEPLOY_TASKS
